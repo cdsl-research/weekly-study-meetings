@@ -15,7 +15,7 @@ def calc_sha256(line_number: int, plain: str):
 
 
 def main():
-    with open('in') as f:
+    with open('in2') as f:
         lines_raw = f.read().splitlines()
 
     global results
@@ -27,16 +27,16 @@ def main():
     for i, line in enumerate(lines_raw):
         t = threading.Thread(target=calc_sha256, args=(i, line))
         t.start()
-        print("execute:", t)
+        # print("execute:", t)
 
     main_thread = threading.currentThread()
     for t in threading.enumerate():
         if t is not main_thread:
-            print("wait:", t.name)
+            # print("wait:", t.name)
             t.join()
 
-    for r in results:
-        print(r)
+    # for r in results:
+    #     print(r)
 
 
 if __name__ == '__main__':

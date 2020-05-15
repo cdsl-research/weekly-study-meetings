@@ -15,3 +15,16 @@
  128457 in2
     150 in3
 ```
+
+## 実行時間
+
+```
+$ time python3 thread.py
+python3 thread.py  37.41s user 38.88s system 127% cpu 59.855 total
+
+$ time python3 thread2.py
+python3 thread2.py  17.28s user 7.44s system 108% cpu 22.810 total
+
+$ time python3 serial.py
+python3 serial.py  0.44s user 0.09s system 100% cpu 0.530 total
+```
