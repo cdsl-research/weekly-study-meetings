@@ -2,7 +2,7 @@ FROM python:3.6
 
 ARG project_dir=/docker-study/docker-flask/
 
-ADD rest/hands_on_1/requirements.txt $project_dir
+ADD src/requirements.txt $project_dir
 
 WORKDIR $project_dir
 
