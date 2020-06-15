@@ -1,0 +1,8 @@
+#cloud-config
+hostname: CoreOS
+users:
+  - name: core
+    passwd: >>replace here openssl passward<<
+    groups:
+      - sudo
+      - docker

@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    build: ./docker/python
+    volumes:
+      - ./server:/var/www/html
+    tty: true
