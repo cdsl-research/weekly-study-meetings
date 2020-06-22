@@ -1,0 +1,11 @@
+piVersion: v1
+kind: Pod
+metadata:
+  name: api
+  labels:
+    app: api
+spec:
+  containers:
+    - name: k8s-study
+      image: yoshimf73/api:latest 
+
